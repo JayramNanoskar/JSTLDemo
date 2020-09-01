@@ -8,9 +8,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	${name}<br>
-	
-	<c:out value="Hello World"/><br>
-	<c:out value="${name}"/>
+	<c:forEach items="${students}" var="s">
+		<c:out value="${s.id}"></c:out>
+		<c:out value="${s.name}"></c:out><br>
+	</c:forEach>
 </body>
 </html>
